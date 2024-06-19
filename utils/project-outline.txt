@@ -4,16 +4,16 @@
     - Goal and Objectives
     - Stakeholders
     - Key Metrics and Success Criteria
-    - Hypothesis (Null and Alternate)
-    - Analytical Questions
-    - Scope and Constraints
-    - More Information about the project if applicable
+    - Hypothesis (Null and Alternate)- (what asumption do we have prior starting the project)
+    - Analytical Questions- (What Questions do we seek to answer)
+    - Scope and Constraints *optional 
+    - More Information about the project if applicable *optional
 2. Data Understanding
     1. Importation
     2. Load Dataset
-    3. EDA
+    3. EDA-(the main function of this step is to help you look at the data before making any assumptions) 
         1. Data Quality Assessment & Exploring data (info, duplicated, null values, describe)
-        2. Univariate
+        2. Univariate- (Histogram and boxplots works for numerical features), (Bar chart for non numerical) 
         3. Bi-variate
         4. Multi-variate Analysis
     4. Answer Analytical questions with visulizations
