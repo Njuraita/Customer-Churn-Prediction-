@@ -1,0 +1,25 @@
+Key Metrics and Success Criteria
+To Edit On the Go
+
+     -The Model should have an accuracy score of 85% (On balanced data)
+     Good models are expected to have an accuracy score of >0.80 or 80%
+
+     -An ROC-AUC (Receiver Operating Characteristic - Area Under the Curve) score of 80% or 0.80 is ideal for the model to perform well.
+
+     -There should be at least four baseline models to compare performance and ensure robustness. eg. Logistic Regression, Decision Trees, Random Forests, and Support Vector Machines (SVM) 
+
+     -All hyperparameter tuning should only be applied if it exceeds the baseline model's F1 score. The F1 score balances precision and recall and is particularly useful for imbalanced datasets.
+
+     -Confusion Matrix Analysis- Evaluate True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN) to understand model performance in detail.
+     Aim to minimize FN (churned customers predicted as non-churned) to reduce customer loss
+
+     -Precision and Recall- High precision indicates a low false positive rate.
+     High recall indicates a low false negative rate.
+     Both metrics should be balanced for effective churn prediction.
+
+     -F1 Score- Particularly useful for imbalanced dataset- as such we have-we aim for an F1 score that indicates balanced performance between precision and recall
+     
+     -Cross-Validation Scores-Use k-fold cross-validation to ensure model stability and performance consistency across different subsets of the data.
+     High and consistent cross-validation scores indicate a robust model
+     -Lift and Gain Charts-Use these charts to measure the effectiveness of the model in identifying true churners.
+      Higher lift and gain values indicate better model performance in distinguishing between churners and non-churners.

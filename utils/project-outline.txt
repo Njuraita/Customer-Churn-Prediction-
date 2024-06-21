@@ -13,8 +13,8 @@
     2. Load Dataset
     3. EDA-(the main function of this step is to help you look at the data before making any assumptions) 
         1. Data Quality Assessment & Exploring data (info, duplicated, null values, describe)
-        2. Univariate- (Histogram and boxplots works for numerical features), (Bar chart for non numerical) 
-        3. Bi-variate
+        2. Univariate- (Histogram,kdeplot and boxplots works for numerical features), (Bar chart for non numerical) 
+        3. Bi-variate- Correlationheatmap,
         4. Multi-variate Analysis
     4. Answer Analytical questions with visulizations
     5. Test hypothesis
