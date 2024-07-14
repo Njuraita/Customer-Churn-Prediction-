@@ -20,7 +20,7 @@ In this project, we aim to predict customer churn using various machine learning
 3. **F1 Score**: Minimum of 0.75 to balance precision and recall, especially for imbalanced classes.
 4. **AUC-ROC Score**: At least 0.85 to effectively distinguish between churn and non-churn customers.
 5. **Confusion Matrix**: Lower the number of False Negatives (FN) to ensure most churn cases are identified.
-6. **Lift and Gain**: Lift value at the top decile should be significantly higher than 1.
+
 
 ## Features
 
