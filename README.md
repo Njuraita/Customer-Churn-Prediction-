@@ -15,7 +15,7 @@ In this project, we aim to predict customer churn using various machine learning
 
 ## Key Metrics and Success Criteria
 
-1. **Accuracy**: The model should have an accuracy score of at least 85%.
+1. **Accuracy**: The model should have an accuracy score of at least 80% best at >85%
 2. **Precision and Recall**: Achieve at least 80% to ensure reliable churn prediction and identification.
 3. **F1 Score**: Minimum of 0.75 to balance precision and recall, especially for imbalanced classes.
 4. **AUC-ROC Score**: At least 0.85 to effectively distinguish between churn and non-churn customers.
