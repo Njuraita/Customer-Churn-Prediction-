@@ -135,11 +135,6 @@ churn_prime.head()
 
 ```
 
-=======
-- `DeviceProtection`: Whether the customer has device protection or not
-  
->>>>>>> a228d776dbc5828df21c098c1fd82e3f0982cd03
-
 
 
 
