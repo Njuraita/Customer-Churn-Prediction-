@@ -35,8 +35,7 @@ In this project, we aim to predict customer churn using various machine learning
 - `InternetService`: Customer's internet service provider (DSL, Fiber Optic, No)
 - `OnlineSecurity`: Whether the customer has online security or not (Yes, No, No Internet)
 - `OnlineBackup`: Whether the customer has online backup or not (Yes, No, No Internet)
-<<<<<<< HEAD
-- `DeviceProtection`: Whether the customer has
+- `DeviceProtection`: Whether the customer has device protection or not
 
 ## Data Understanding
 
@@ -137,6 +136,7 @@ churn_prime.head()
 ```
 
 
+<<<<<<< HEAD
 After Merging the train data we did some data inspection using funstions such as .info(), .shape, .describe(), .isnull(), .duplicated()
 
 
@@ -152,6 +152,35 @@ After Merging the train data we did some data inspection using funstions such as
   - Degrees of Freedom: 2
   - Conclusion: The p-value is extremely low, providing strong evidence against the null hypothesis. Therefore, we reject the null hypothesis for all contract types tested, indicating a significant difference in churn rates among customers with different contract types.
   
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> f76d4a74ae71b2a5a4f8794faa34435941501e25
 
 #### Handling Missing Values
 
