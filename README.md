@@ -162,6 +162,9 @@ preprocessor = ColumnTransformer(transformers=[
 - Neural Network showed competitive performance but slightly lower precision.
 - KNN exhibited the lowest recall among the models.
 
-### Conclusion
+### Conclusion in Regards to Modeling and Evaluation
 
 - Ensemble methods (Random Forest and GBM) are recommended for their balanced performance across all metrics. They are particularly suitable for applications where F1-score is the primary consideration.
+
+
+### Hperparameter Tuning 
