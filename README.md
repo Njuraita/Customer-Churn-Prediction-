@@ -37,6 +37,104 @@ In this project, we aim to predict customer churn using various machine learning
 - `OnlineBackup`: Whether the customer has online backup or not (Yes, No, No Internet)
 - `DeviceProtection`: Whether the customer has
 
+## Data Understanding
+
+### Importations 
+
+```dotnetcli
+# Data Manipulation Packages 
+
+import pandas as pd
+import numpy as np 
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.api as sm
+import pyodbc
+from dotenv import dotenv_values
+import scipy.stats as stats
+import optuna
+import warnings
+
+from scipy.stats import chi2_contingency
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import RobustScaler, QuantileTransformer
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.metrics import roc_auc_score, roc_curve, auc, precision_score, recall_score, f1_score 
+from sklearn.model_selection import cross_val_score, GridSearchCV
+from imblearn.over_sampling import SMOTE, RandomOverSampler
+from imblearn.pipeline import Pipeline as imbPipeline
+
+
+
+warnings.filterwarnings('ignore')
+
+```
+
+### Load Datasets 
+
+*The data is located in 3 different locations;*
+- MySQL Database 3000 train dataset
+- A csv in a github repo 2000 train data
+- A csv in onedrive- test data
+
+#### Loading the SQL Data 
+
+```dotnetcli
+# Load environment variables from .env file into a dictionary
+environment_variables = dotenv_values (r'C:\Users\Admin\OneDrive\OneDrive-Azubi\Customer-Churn-Prediction-\.env')
+
+# Get the values for the credentials you set in the '.env' file
+server = environment_variables.get('SERVER')
+database = environment_variables.get('DATABASE')
+username = environment_variables.get('USERNAME')
+password = environment_variables.get('PASSWORD')
+
+# Create a connection string
+connection_string = f"DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password};MARS_Connection=yes;MinProtocolVersion=TLSv1.2;"
+
+
+connection = pyodbc.connect(connection_string)
+```
+
+```dotnetcli
+# Loading the First 3000 dataset
+query = "SELECT * FROM LP2_Telco_churn_first_3000"
+
+data = pd.read_sql(query, connection)
+
+data.head()
+```
+
+#### Loading train Data from the csv
+
+``` 
+# Loading the second 2000 data
+df=pd.read_csv('../data/LP2_Telco-churn-second-2000.csv')
+df.head()
+```
+
+#### Merge Data
+
+```
+# Combine DataFrames
+churn_prime = pd.concat([data, df], ignore_index=True)
+
+churn_prime.head()
+
+```
+
 
 
 
