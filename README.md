@@ -197,7 +197,7 @@ preprocessor = ColumnTransformer(transformers=[
 
 #### Preview into Our Data Visualization Dashboard
 
-![Reference Image](C:\Users\Admin\OneDrive\OneDrive-Azubi\Customer-Churn-Prediction-\Customer Churn Prediction Dashboard.pbix)
+![Reference Image](<https://app.powerbi.com/view?r=eyJrIjoiNmM1ZmY1NGEtZDdlMi00ZjMyLTkxODAtY2ZlM2Y2Yjg3Zjc2IiwidCI6IjQ0ODdiNTJmLWYxMTgtNDgzMC1iNDlkLTNjMjk4Y2I3MTA3NSJ9>)
 
 
 #### As We Wrap up :tada:
