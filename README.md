@@ -136,57 +136,67 @@ churn_prime.head()
 
 ```
 
-=======
-- `DeviceProtection`: Whether the customer has device protection or not
+
+After Merging the train data we did some data inspection using funstions such as .info(), .shape, .describe(), .isnull(), .duplicated()
+
+
+#### Hypothesis Testing
+
+#### Chi-Square Test
+- **Hypothesis**:
+  - Null Hypothesis (H0): There is no significant difference in churn rates among customers with different contract types.
+  - Alternative Hypothesis (H1): There is a significant difference in churn rates among customers with different contract types.
+- **Result**:
+  - Chi-Square Statistic: 881.6208905118242
+  - P-value: 3.61789584641233e-192
+  - Degrees of Freedom: 2
+  - Conclusion: The p-value is extremely low, providing strong evidence against the null hypothesis. Therefore, we reject the null hypothesis for all contract types tested, indicating a significant difference in churn rates among customers with different contract types.
   
->>>>>>> a228d776dbc5828df21c098c1fd82e3f0982cd03
 
+#### Handling Missing Values
 
+- The `TotalCharges` column's missing values are filled with the median.
+- Missing values in categorical columns (`MultipleLines`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`, `Churn`) are filled with the mode.
+- The `customerID` column is dropped as it does not provide statistical or computational significance.
 
+#### Final Data Check
 
+- The dataset has no duplicated rows.
+- The dataset is not evenly distributed, with mean and median significantly differing for numerical columns.
+- The dataset contains outliers as seen in the long tails of KDE plots and histograms for `TotalCharges`.
 
+## Exploratory Data Analysis (EDA)
 
+### Key Insights
 
+- **Churn Distribution**: The churn rate is higher among customers with multiple services.
+- **Tenure and Churn**: Most customers tend to churn early; those who stay longer are less likely to churn.
+- **Payment Methods and Churn**: There is a significant difference in churn rates among customers with different payment methods.
+- **Demographics and Churn**: Customers with different demographic factors (e.g., gender, senior citizen status) show varied churn rates.
+- **Internet Service and Churn**: The type of internet service impacts churn rates.
+- **Contract Type and Churn**: Different contract types show varied churn rates, with month-to-month contracts having higher churn.
 
+### Data Transformation
 
+### Encoding Categorical Variables
 
+- Categorical columns are encoded using appropriate encoding techniques to prepare the data for modeling.
 
+### Handling Imbalanced Data
 
+- The dataset exhibits a significant class imbalance, with non-churn instances significantly outnumbering churn instances.
 
+### Data Splitting
 
+- The data is split into training and testing sets using an 80-20 split, with stratification to maintain the distribution of the target variable.
 
+#### Skewness Check
 
+- Numeric features show varying levels of skewness, indicating the need for appropriate scaling or transformation.
 
+#### Target Encoding
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- The target variable `y` is encoded using `LabelEncoder` to prepare it for modeling
 
 
 ## Data Preprocessing
