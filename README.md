@@ -35,8 +35,7 @@ In this project, we aim to predict customer churn using various machine learning
 - `InternetService`: Customer's internet service provider (DSL, Fiber Optic, No)
 - `OnlineSecurity`: Whether the customer has online security or not (Yes, No, No Internet)
 - `OnlineBackup`: Whether the customer has online backup or not (Yes, No, No Internet)
-<<<<<<< HEAD
-- `DeviceProtection`: Whether the customer has
+- `DeviceProtection`: Whether the customer has device protection or not
 
 ## Data Understanding
 
