@@ -195,9 +195,9 @@ preprocessor = ColumnTransformer(transformers=[
 - Other Challenges were learning oportnities :blush:
 - We will also be exporting core machine learning Components for future use in other projects 
 
-#### Preview into Our Data Visualization Dashboard
+#### Preview into Our Data Visualization Dashboard on Power Bi
 
-![Reference Image](Churn Power Bi Screenshot.PNG) 
+![Reference Image](<Churn Power Bi Screenshot.PNG>) 
 
 
 #### As We Wrap up :tada:
