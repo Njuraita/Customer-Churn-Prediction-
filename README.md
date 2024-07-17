@@ -168,3 +168,49 @@ preprocessor = ColumnTransformer(transformers=[
 
 
 ### Hperparameter Tuning 
+
+#### Hyperparameter Tuning Results
+
+#### Gradient Boosting Machine (GBM)
+
+- **Error Handling:** The error messages encountered during trials were due to setting `'max_features': 'auto'`, which is not compatible with `cross_val_score` in scikit-learn. This issue will be addressed in future tuning iterations.
+
+- **Optimization Progress:** Despite encountering errors in some trials, the study completed all 100 trials as specified (`n_trials=100`).
+
+- **Best F1-Score:** The best F1-score observed during the study was **0.794**, achieved in Trial 63, which represents a slight improvement.
+
+#### Random Forest
+
+- **Trial Number:** Trial 99 was the 99th trial conducted during the optimization process.
+
+- **Trial Result:** The F1-score observed for Trial 99 was **0.6353**.
+
+- **Best Trial:** The best F1-score observed overall throughout all trials was **0.6424**, achieved in Trial 40.
+
+- **Performance Drop:** There was a drop in F1 Score from an initial 0.791 to 0.642, indicating a need for further hyperparameter adjustment to enhance performance.
+
+#### Challenges and Moving Forward 
+
+- The only Major Challenge was with the hyperparameter tunings of our 2 best performing models which we will seek to work it out with the best hyperparameters so that we can move forward to sellecting the best model for our test data
+- Other Challenges were learning oportnities :blush:
+- We will also be exporting core machine learning Components for future use in other projects 
+
+#### Preview into Our Data Visualization Dashboard
+
+![Reference Image](C:\Users\Admin\OneDrive\OneDrive-Azubi\Customer-Churn-Prediction-\Customer Churn Prediction Dashboard.pbix)
+
+
+#### As We Wrap up :tada:
+
+**Summarry**
+*This deep and detailed README file gives a step by step understaning and guide over a project titled Customer Churn Prediction. It has project objective, hypothesis testing, analytical questions and instructions with snipets of the project highlighted. It goes an extra mile to give a glimpse of the deployment methods used in this project*
+
+**Acknowledgment**
+*lots of appreciation to my tutors at Azubi Africa COHORT 7, My fellow students in DAP7 for being resourceful throughout this journey. Special thanks to team Ireland; an amazing thought provoking and dedicated team to work with*
+
+**How to Contribute to project**
+*pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change*
+
+please make sure to update tests as appropriate.
+  
+
