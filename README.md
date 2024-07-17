@@ -35,6 +35,7 @@ In this project, we aim to predict customer churn using various machine learning
 - `InternetService`: Customer's internet service provider (DSL, Fiber Optic, No)
 - `OnlineSecurity`: Whether the customer has online security or not (Yes, No, No Internet)
 - `OnlineBackup`: Whether the customer has online backup or not (Yes, No, No Internet)
+<<<<<<< HEAD
 - `DeviceProtection`: Whether the customer has
 
 ## Data Understanding
@@ -135,6 +136,10 @@ churn_prime.head()
 
 ```
 
+=======
+- `DeviceProtection`: Whether the customer has device protection or not
+  
+>>>>>>> a228d776dbc5828df21c098c1fd82e3f0982cd03
 
 
 
