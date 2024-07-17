@@ -197,7 +197,7 @@ preprocessor = ColumnTransformer(transformers=[
 
 #### Preview into Our Data Visualization Dashboard
 
-![Reference Image](C:\Users\Admin\OneDrive\OneDrive-Azubi\Customer-Churn-Prediction-\Churn Power Bi Screenshot.PNG)
+![Reference Image](Churn Power Bi Screenshot.PNG) 
 
 
 #### As We Wrap up :tada:
