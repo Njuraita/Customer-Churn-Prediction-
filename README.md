@@ -150,38 +150,8 @@ After Merging the train data we did some data inspection using funstions such as
   - Chi-Square Statistic: 881.6208905118242
   - P-value: 3.61789584641233e-192
   - Degrees of Freedom: 2
-  - Conclusion: The p-value is extremely low, providing strong evidence against the null hypothesis. Therefore, we reject the null hypothesis for all contract types tested, indicating a significant difference in churn rates among customers with different contract types.
-  
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> f76d4a74ae71b2a5a4f8794faa34435941501e25
-
+  - Conclusion: The p-value is extremely low, providing strong evidence against the null hypothesis. Therefore, we reject the null hypothesis for all contract types tested, indicating a significant difference in churn rates among customers with different contract types
+    
 #### Handling Missing Values
 
 - The `TotalCharges` column's missing values are filled with the median.
