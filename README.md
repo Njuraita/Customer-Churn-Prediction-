@@ -4,7 +4,7 @@
 
 In this project, we aim to predict customer churn using various machine learning models. By identifying the factors influencing churn, we strive to build a reliable model that provides actionable insights for businesses to enhance their customer retention strategies.
 
-## Models Used
+## Models 
 
 - Logistic Regression
 - Random Forest
@@ -89,6 +89,8 @@ warnings.filterwarnings('ignore')
 - A csv in a github repo 2000 train data
 - A csv in onedrive- test data
 
+**All the above stated will be in the data folder of this repo**
+
 #### Loading the SQL Data 
 
 ```dotnetcli
@@ -136,8 +138,8 @@ churn_prime.head()
 ```
 
 
-<<<<<<< HEAD
-After Merging the train data we did some data inspection using funstions such as .info(), .shape, .describe(), .isnull(), .duplicated()
+**Data Inspection functions**
+ .info(), .shape, .describe(), .isnull(), .duplicated()
 
 
 #### Hypothesis Testing
@@ -146,11 +148,7 @@ After Merging the train data we did some data inspection using funstions such as
 - **Hypothesis**:
   - Null Hypothesis (H0): There is no significant difference in churn rates among customers with different contract types.
   - Alternative Hypothesis (H1): There is a significant difference in churn rates among customers with different contract types.
-- **Result**:
-  - Chi-Square Statistic: 881.6208905118242
-  - P-value: 3.61789584641233e-192
-  - Degrees of Freedom: 2
-  - Conclusion: The p-value is extremely low, providing strong evidence against the null hypothesis. Therefore, we reject the null hypothesis for all contract types tested, indicating a significant difference in churn rates among customers with different contract types
+
     
 #### Handling Missing Values
 
@@ -315,7 +313,15 @@ preprocessor = ColumnTransformer(transformers=[
 #### As We Wrap up :tada:
 
 **Summarry**
-*This deep and detailed README file gives a step by step understaning and guide over a project titled Customer Churn Prediction. It has project objective, hypothesis testing, analytical questions and instructions with snipets of the project highlighted. It goes an extra mile to give a glimpse of the deployment methods used in this project*
+*This detailed README file gives a step by step understaning and guide over a project titled Customer Churn Prediction. It has project objective, hypothesis testing, analytical questions and instructions with snipets of the project highlighted. It goes an extra mile to give a glimpse of the deployment methods used in this project*
+
+*please note this README is uploaded after the project has been completed to capture details in the project and not before the project to show what was unticipated to be done* 
+
+**The Author :blush:**
+Email: njerisharon06@gmail.com
+LinkedIn: www.linkedin.com/in/sharon-njeri-njuraita
+Article to this project: https://medium.com/@njerisharon06/customer-churn-prediction-project-ccb0267c475c
+
 
 **Acknowledgment**
 *lots of appreciation to my tutors at Azubi Africa COHORT 7, My fellow students in DAP7 for being resourceful throughout this journey. Special thanks to team Ireland; an amazing thought provoking and dedicated team to work with*
